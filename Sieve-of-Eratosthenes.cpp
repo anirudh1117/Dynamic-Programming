@@ -1,4 +1,5 @@
 #include <iostream>
+#include<bits/stdc++.h>
 using namespace std;
 
 int main() {
@@ -9,7 +10,7 @@ int main() {
 	int i,j;
 	for(i=0;i<=n;i++)
 	a[i]=1;
-	for(i=2;i<=n;i++){
+	for(i=2;i<=sqrt(n);i++){
 	    if(a[i]==1){
 	        for(j=2;j*i<=n;j++){
 	            a[i*j]=0;
